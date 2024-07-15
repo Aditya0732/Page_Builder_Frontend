@@ -10,7 +10,6 @@ Page Builder is a responsive web application that allows users to create and man
 ## Features
 
 - **Drag-and-Drop Interface**: Create layouts by dragging elements from the sidebar onto the canvas.
-- **Element Descriptions**: Add descriptions to elements for better organization.
 - **Workspace Management**: Save, update, and manage multiple workspaces.
 - **JSON Export**: Export workspace configurations as JSON for easy sharing or backup.
 - **Responsive Design**: Fully responsive website for seamless use across devices.
