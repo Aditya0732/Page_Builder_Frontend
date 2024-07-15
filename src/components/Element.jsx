@@ -95,6 +95,7 @@ const Element = ({ element, onSelect, onMove, isSelected, canvasSize }) => {
               width: '100%', 
               height: '100%'
             }} 
+            // onClick={(e) => e.stopPropagation()}
           />
         );
       case 'Button':
