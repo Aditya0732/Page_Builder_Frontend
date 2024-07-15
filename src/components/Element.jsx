@@ -87,8 +87,7 @@ const Element = ({ element, onSelect, onMove, isSelected, canvasSize }) => {
       case 'Input':
         return (
           <input 
-            type="text" 
-            // defaultValue={element.content} 
+            type="text"
             placeholder={`${element.content}`}
             className="border p-1" 
             style={{ 

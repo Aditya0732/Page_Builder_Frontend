@@ -237,14 +237,14 @@ const Workspace = () => {
                     <div className="flex items-center">
                         {!sidebarOpen && (<button
                             onClick={toggleSidebar}
-                            className="mr-4 text-blue-500 focus:outline-none"
+                            className="mr-4 text-blue-500 focus:outline-none md:hidden"
                         >
                             <MenuIcon className="h-6 w-6" />
                         </button>)}
                         <h1 className={`text-2xl sm:text-3xl flex items-center font-bold ${darkMode ? 'text-white' : 'text-gray-800'}`}>
                             {workspace?.name}
                             {hasUnsavedChanges && (
-                                <span className="ml-2 text-xs font-medium text-black rounded-lg px-2 py-1 bg-yellow-400">
+                                <span onClick={saveWorkspace} className="ml-2 cursor-pointer text-xs font-medium text-black rounded-lg px-2 py-1 bg-yellow-400">
                                     Unsaved changes
                                 </span>
                             )}

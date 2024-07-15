@@ -64,11 +64,9 @@ const Sidebar = ({ darkMode, isOpen, onClose, canvasColor, onCanvasColorChange, 
 
   return (
     <div
-      className={`fixed md:static top-0 left-0 z-20 h-full w-64 ${
-        darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
-      } p-6 shadow-lg overflow-y-auto transition-transform duration-300 ease-in-out ${
-        isOpen ? 'translate-x-0' : '-translate-x-full'
-      }`}
+      className={`fixed md:static md:block top-0 left-0 z-20 h-screen w-64 ${darkMode ? 'bg-gray-800 text-white' : 'bg-white text-gray-800'
+        } p-6 shadow-lg overflow-y-auto transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'
+        } md:translate-x-0`}
     >
       <button
         onClick={onClose}
@@ -85,9 +83,8 @@ const Sidebar = ({ darkMode, isOpen, onClose, canvasColor, onCanvasColorChange, 
             onDragStart={(e) => handleDragStart(e, element.type)}
             onTouchStart={(e) => handleTouchStart(e, element.type)}
             onTouchEnd={handleTouchEnd}
-            className={`flex items-center p-3 rounded-lg cursor-move transition-all shadow-sm ${
-              darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'
-            }`}
+            className={`flex items-center p-3 rounded-lg cursor-move transition-all shadow-sm ${darkMode ? 'bg-gray-700 hover:bg-gray-600' : 'bg-gray-100 hover:bg-gray-200'
+              }`}
           >
             <element.icon className={`text-xl mr-3 ${darkMode ? 'text-blue-400' : 'text-blue-600'}`} />
             <span>{element.type}</span>
